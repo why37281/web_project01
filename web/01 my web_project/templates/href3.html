@@ -1,0 +1,38 @@
+<!DOCTYPE html />
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/css1.css">
+    <meta charset="UTF-8" />
+    <title>个人信息</title>
+    <embed src="static/music/music1.mp3" hidden="true" autostart="true" loop="true" />
+</head>
+<body>
+<a href="/main1" style="font-size:25px !important"><img src="static/image/image3.jpg" /></a><br />
+<h1 align="left" style="color:blue">我的信息</h1>
+<!--form表单：把要提交的内容放在form中，表单可以获取用户输入的内容，将内容提交给服务器。-->
+
+<form action="/form3" method="post">
+    <!--创建文本框（使用input元素，type="text"），用户在该文本框输入"姓名"-->
+
+    <p>姓名:</p>
+    <input type="text" name="name" required /><br />
+    <br />
+    <!--创建文本框（使用input元素，type="text"），用户在该文本框输入"年龄"-->
+
+    <p>年龄:</p><input type="text" name="age" required /><br /><br />
+    <br />
+    <!--创建单选按钮（使用input元素，type="radio"），用户点击单选按钮选择"性别"-->
+    <input type="radio" name="gender" value="male" required /><p>男生 </p><br />
+    <input type="radio" name="gender" value="female" required /><p>女生 </p><br /><br />
+
+    <p>电话号码</p><br />
+    <!--创建文本域（使用textarea元素），用户在该文本域填写"个人简介"-->
+    <input type="text" name="tel" />
+    <br /><br />
+
+    <!--创建提交按钮（使用input元素，type="submit" value="提交"），用户点击该提交按钮进行"上传"-->
+<input type="submit" value="提交" />
+
+</form>
+</body>
+</html>

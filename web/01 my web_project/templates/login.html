@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/css1.css">
+    <meta charset="UTF-8">
+    <embed src="static/music/music1.mp3" hidden="true" autostart="true" loop="true" />
+    <style>
+        a{
+            font-size:25px !important
+        }
+    </style>
+    <title>登陆</title>
+</head>
+<body>
+<a href="/href"><img src="static/image/image3.jpg" /></a><br />
+<h1>登录</h1>
+<form action="/form1" method="post">
+    <p style="color:red;">{{t_error}}</p>
+    <p>账号：</p><input type="text" name="p" required><br /><br />
+    <p>密码：</p><input type="password" name="m" required><br /><br />
+    <input type="submit" name="o" value="登陆"><br /><br />
+    <p>没有密码？试试</p><a href="/login1">注册</a>
+</form>
+</body>
+</html>

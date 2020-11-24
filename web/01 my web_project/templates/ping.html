@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>response.setHeader("Access-Control-Allow-Origin","*");</script>
+    <script>
+        require.config(
+    {　　　　
+        paths:
+        {　　　　　　
+            "fundebug": "fundebug"　　　
+        }　　
+    });
+
+    require(['fundebug'], function(fundebug)
+    {　　　　
+        fundebug.apikey = "c91f54b39d34b22508a50130d66618ddece08e0f499520d8ae83fe3927773464";
+    });
+    </script>
+    <script type="text/javascript" src="static/js/jquery-1.8.2.min.js" crossorigin></script>
+    <script src="/我的项目/node_modules/mongodb/lib/mongo_client.js" crossorigin></script>
+    <script src="static/js/require.js" crossorigin></script>
+    <script src="static/js/js.js" id="blo" crossorigin></script>
+    <script src="static/js/imports.js" id="bloc" crossorigin></script>
+    <script>
+    window.onerror = function(errorMessage, scriptURI, lineNumber,columnNumber,errorObj) {
+    console.log("错误信息：" , errorMessage);
+    console.log("出错文件：" , scriptURI);
+    console.log("出错行号：" , lineNumber);
+    console.log("出错列号：" , columnNumber);
+    console.log("错误详情：" , errorObj);
+    window.addEventListener('error', ()=>{
+  console.log('addEventListener')
+}, true);
+
+window.addEventListener("unhandledrejection", function(e) {
+    console.log('unhandledrejection')
+}, true);
+
+window.addEventListener('error', ()=>{
+  console.log('addEventListener')
+}, true);
+
+window.addEventListener("unhandledrejection", function(e) {
+    console.log('unhandledrejection')
+}, true);
+
+// 资源加载前，必须先监听错误事件
+window.addEventListener('error', ()=>{
+  console.log('addEventListener')
+}, true);
+
+window.addEventListener("unhandledrejection", function(e) {
+    console.log('unhandledrejection')
+}, true);
+
+// "addEventListener"
+// "addEventListener"
+
+
+
+
+// "console"
+// "error"
+
+// 跨域错误默认提示 Script error
+window.addEventListener('error', ()=>{
+  console.log('addEventListener')
+}, true);
+
+window.addEventListener("unhandledrejection", function(e) {
+    console.log('unhandledrejection')
+}, true);
+
+// 客户端添加crossorigin属性
+// 服务端添加Access-Control-Allow-Origin: *
+// 否则只提示Script error，无法获取具体错误信息
+
+
+window.addEventListener('error', ()=>{
+  console.log('addEventListener')
+}, true);
+
+window.addEventListener("unhandledrejection", function(e) {
+    console.log('unhandledrejection')
+}, true);
+
+new Promise((resolve, reject)=>{
+
+})
+
+new Promise((resolve, reject)=>{
+  resolve('')
+})
+.then((data)=>{
+
+})
+
+new Promise((resolve, reject)=>{
+
+})
+.catch((err)=>{
+  console.error(err)
+})
+
+// [object Error] { ... }
+// "unhandledrejection"
+// "unhandledrejection"
+window.addEventListener('error', (e)=>{
+  console.log('addEventListener')
+}, true);
+
+window.addEventListener("unhandledrejection", function(e) {
+    console.log('unhandledrejection')
+}, true);
+
+async function compute () {
+    let a = 1;
+    let b = await a + 2;
+
+
+}
+
+compute()
+
+// "unhandledrejection"
+window.addEventListener('error', (e)=>{
+  console.log('addEventListener')
+}, true);
+
+window.addEventListener("unhandledrejection", function(e) {
+    console.log('unhandledrejection')
+}, true);
+
+// gennerator
+function* F() {
+  yield 1;
+  return "gennerator-value";
+}
+
+var f = F();
+
+f.next();
+
+// "addEventListener"
+var frames = window.frames;
+for (var i = 0; i < frames.length; i++) {
+  frames[i].addEventListener('error', (e)=>{
+    console.log('addEventListener')
+    console.log(e)
+  }, true);
+
+  frames[i].addEventListener("unhandledrejection", function(e) {
+      console.log('unhandledrejection')
+  }, true);
+}
+window.addEventListener('error', (e)=>{
+  console.log('addEventListener')
+  console.log(e)
+}, true);
+
+window.addEventListener("unhandledrejection", function(e) {
+    console.log('unhandledrejection')
+  console.log(e)
+}, true);
+
+// 请求返回错误
+fetch('http://example.com/movies.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(myJson);
+  });
+
+// 无效请求
+fetch('http://example.com/404.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(myJson);
+  });
+
+const xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onreadystatechange=state_Change;
+xmlhttp.open("GET", 'http://127.0.0.1:8000/',true);
+xmlhttp.send(null);
+
+function state_Change(){
+  if (xmlhttp.readyState == 4){// 4 = "loaded"
+    if (xmlhttp.status == 200){// 200 = "OK"
+    }else{
+      console.log("Problem retrieving XML data:" + xmlhttp.statusText);
+    }
+  }
+}
+window.addEventListener('error', (e) => {
+  console.log(e)
+  console.log(e.message)
+  console.log(e.source)
+  console.log(e.lineno)
+  console.log(e.colno)
+  console.log(e.error)
+  // 禁止默认错误提示
+  e.preventDefault();
+}, true);
+    }
+    </script>
+
+    <meta charset="UTF-8">
+    <title>评论区</title>
+</head>
+<body>
+<textarea style="overflow:scroll;overflow-y:visible;width: 548px;height: 773px" readonly id="block"align="center">{{t_ping}}</textarea>
+<form action="/ping_us" method="post">
+    <textarea style="width: 548px;height: 137px;overflow:scroll;overflow-y:visible;" name="ping-us" placeholder="说点什么吧……"></textarea>
+    <input type="submit" value="发送">
+</form>
+</body>
+</html>
